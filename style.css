@@ -380,6 +380,15 @@ main{ position:relative; z-index:2; }
   border:1px solid var(--glass-border); background:var(--glass-bg); color:var(--cream); font-size:1.1rem;
 }
 
+/* =============== FOOTER =============== */
+.site-footer{
+  position:relative; z-index:2; text-align:center; padding:1.6rem 1rem 2.2rem;
+  font-family:'Cormorant Garamond',serif; font-style:italic; font-size:.95rem;
+  color:var(--lavender); opacity:.75;
+}
+.footer-heart{ display:inline-block; animation:heartbeat 1.6s ease-in-out infinite; }
+.footer-name{ color:var(--gold-soft); font-weight:600; font-style:normal; }
+
 /* =============== BACK TO TOP =============== */
 .back-to-top{
   position:fixed; bottom:24px; right:24px; z-index:500; width:48px; height:48px; border-radius:50%;
