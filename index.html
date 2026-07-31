@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Dhannoooo ❤️ — Forever & Always</title>
+<meta name="description" content="A love letter, in the shape of a website.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-heart">
+    <svg viewBox="0 0 100 90" class="loader-heart-svg">
+      <path d="M50 85 C 20 60, 0 40, 0 22 C 0 5, 15 -2, 28 5 C 38 10, 46 20, 50 28 C 54 20, 62 10, 72 5 C 85 -2, 100 5, 100 22 C 100 40, 80 60, 50 85 Z"/>
+    </svg>
+  </div>
+  <p class="loader-text">opening something made for you<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+</div>
+
+<!-- ============ AMBIENT LAYERS (stars / particles / hearts) ============ -->
+<canvas id="stars-canvas" aria-hidden="true"></canvas>
+<div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+<div class="glow-particles" id="glowParticles" aria-hidden="true"></div>
+
+<!-- ============ PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ ENTRY GATE ============ -->
+<section class="gate" id="gate">
+  <div class="gate-inner">
+    <p class="gate-eyebrow">a small universe, built for</p>
+    <h1 class="gate-name">Dhannoooo <span class="heart-pulse">❤️</span></h1>
+    <button class="gate-btn" id="gateBtn">
+      <span>open it</span>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</section>
+
+<main id="mainContent">
+
+  <!-- ============ 1. HERO ============ -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-frame">
+      <img src="images/photo6.jpg" alt="Dhannoooo smiling" class="hero-photo" loading="eager">
+      <div class="hero-frame-shine"></div>
+    </div>
+    <p class="hero-eyebrow">for the girl who owns my whole heart</p>
+    <h1 class="hero-title">
+      <span class="hero-title-line">Dhannoooo</span>
+      <span class="hero-heart">❤️</span>
+    </h1>
+    <p class="hero-subtitle">You are my favorite person, today and forever.</p>
+    <a href="#gallery" class="hero-scroll" aria-label="scroll down">
+      <span>scroll gently</span>
+      <span class="hero-scroll-line"></span>
+    </a>
+  </header>
+
+  <!-- ============ 2. 3D GALLERY ============ -->
+  <section class="section gallery-section" id="gallery">
+    <p class="section-eyebrow">Dhnnooo...❤️❤️❤️</p>
+    <h2 class="section-title">every frame, you</h2>
+    <div class="gallery-3d" id="gallery3d">
+      <div class="gallery-track" id="galleryTrack">
+        <figure class="gallery-card" data-full="images/photo1.jpg"><img src="images/photo1.jpg" alt="Memory one" loading="lazy"></figure>
+        <figure class="gallery-card" data-full="images/photo2.jpg"><img src="images/photo2.jpg" alt="Memory two" loading="lazy"></figure>
+        <figure class="gallery-card" data-full="images/photo4.jpg"><img src="images/photo4.jpg" alt="Memory three" loading="lazy"></figure>
+        <figure class="gallery-card" data-full="images/photo3.jpg"><img src="images/photo3.jpg" alt="Memory four" loading="lazy"></figure>
+        <figure class="gallery-card" data-full="images/photo5.jpg"><img src="images/photo5.jpg" alt="Memory five" loading="lazy"></figure>
+        <figure class="gallery-card" data-full="images/photo6.jpg"><img src="images/photo6.jpg" alt="Memory six" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="gallery-controls">
+      <button id="galleryPrev" aria-label="previous photo">‹</button>
+      <button id="galleryNext" aria-label="next photo">›</button>
+    </div>
+  </section>
+
+  <!-- ============ 3. LOVE STORY TIMELINE ============ -->
+  <section class="section timeline-section" id="story">
+    <p class="section-eyebrow">how it started</p>
+    <h2 class="section-title">Our Love Story</h2>
+    <p class="section-note">(edit the dates & words below to match our real story — this is just the shape of it ✍️)</p>
+    <div class="timeline" id="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">The Beginning</span>
+          <h3>The First Hello</h3>
+          <p>One ordinary moment turned into the start of something I never wanted to end — the first time I saw you, something in me just knew.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Somewhere in Between</span>
+          <h3>Getting to Know You</h3>
+          <p>Late night conversations, silly jokes, and the slow realization that I looked forward to talking to you more than anything else in my day.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">The Turning Point</span>
+          <h3>Falling, Completely</h3>
+          <p>Somewhere between the laughter and the little moments, "I like you" quietly turned into "I love you" — and I've never been more sure of anything.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Today</span>
+          <h3>Us, Now</h3>
+          <p>Still choosing you, still smiling at your name on my screen, still counting you as the best part of every single day.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot--future"></div>
+        <div class="timeline-card timeline-card--future">
+          <span class="timeline-date">Forever</span>
+          <h3>Everything Ahead</h3>
+          <p>Every chapter we haven't written yet — I want to be there for all of it, with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. MEMORY CAROUSEL ============ -->
+  <section class="section memory-section" id="memories">
+    <p class="section-eyebrow">moments i keep replaying</p>
+    <h2 class="section-title">Little Memories</h2>
+    <div class="memory-carousel" id="memoryCarousel">
+      <div class="memory-track" id="memoryTrack">
+        <div class="memory-slide"><img src="images/photo5.jpg" alt="A memory together" loading="lazy"><p>that one day you looked at me like <em>that</em>.</p></div>
+        <div class="memory-slide"><img src="images/photo1.jpg" alt="A memory together" loading="lazy"><p>this smile. i think about this smile a lot.</p></div>
+        <div class="memory-slide"><img src="images/photo2.jpg" alt="A memory together" loading="lazy"><p>quiet moments, just being near you.</p></div>
+        <div class="memory-slide"><img src="images/photo6.jpg" alt="A memory together" loading="lazy"><p>my favorite kind of close-up.</p></div>
+        <div class="memory-slide"><img src="images/photo3.jpg" alt="A memory together" loading="lazy"><p>even in black and white, you glow.</p></div>
+      </div>
+    </div>
+    <div class="memory-dots" id="memoryDots"></div>
+  </section>
+
+  <!-- ============ 6. ANIMATED LOVE LETTER ============ -->
+  <section class="section letter-section" id="letter">
+    <p class="section-eyebrow">something i wrote for you</p>
+    <h2 class="section-title">A Letter, Just for You</h2>
+    <div class="letter-paper">
+      <div class="letter-seal">❤️</div>
+      <p class="letter-greeting">My Dhannoooo,</p>
+      <p class="letter-body" id="letterBody"></p>
+      <p class="letter-signoff">— yours, always.</p>
+    </div>
+  </section>
+
+  <!-- ============ 7. MUSIC PLAYER ============ -->
+  <section class="section music-section" id="music">
+    <p class="section-eyebrow">our soundtrack</p>
+    <h2 class="section-title">Songs That Remind Me of You</h2>
+    <div class="player">
+      <div class="player-art">
+        <div class="vinyl" id="vinyl">
+          <div class="vinyl-center">❤️</div>
+        </div>
+      </div>
+      <div class="player-info">
+        <h3 id="trackTitle">Add your first song</h3>
+        <p id="trackArtist">drop an mp3 into /songs and update script.js</p>
+        <div class="player-progress">
+          <span id="playerCurrent">0:00</span>
+          <div class="player-bar"><div class="player-bar-fill" id="playerBarFill"></div></div>
+          <span id="playerDuration">0:00</span>
+        </div>
+        <div class="player-controls">
+          <button id="playerPrev" aria-label="previous song">⏮</button>
+          <button id="playerPlay" aria-label="play or pause">▶</button>
+          <button id="playerNext" aria-label="next song">⏭</button>
+        </div>
+        <ul class="player-list" id="playerList"></ul>
+      </div>
+    </div>
+    <audio id="audioEl" preload="none"></audio>
+  </section>
+
+  <!-- ============ 8. INTERACTIVE 3D GLOWING HEART ============ -->
+  <section class="section heart3d-section" id="heart3d">
+    <p class="section-eyebrow">touch it</p>
+    <h2 class="section-title">This Heart is Yours</h2>
+    <div class="heart3d-stage" id="heart3dStage">
+      <div class="heart3d" id="heart3dEl">
+        <div class="heart3d-half heart3d-left"></div>
+        <div class="heart3d-half heart3d-right"></div>
+        <span class="heart3d-label">Dhannoooo ❤️</span>
+      </div>
+    </div>
+    <p class="heart3d-hint">move your cursor near it, or tap it on mobile</p>
+  </section>
+
+  <!-- ============ 9. ROTATING QUOTES ============ -->
+  <section class="section quotes-section" id="quotes">
+    <div class="quote-mark">"</div>
+    <p class="quote-text" id="quoteText"></p>
+    <div class="quote-dots" id="quoteDots"></div>
+  </section>
+
+  <!-- ============ 10. FINALE ============ -->
+  <section class="section finale-section" id="finale">
+    <canvas id="fireworksCanvas"></canvas>
+    <div class="finale-content">
+      <img src="images/photo4.jpg" alt="Dhannoooo" class="finale-photo" loading="lazy">
+      <h2 class="finale-title">I Love You <span>Forever</span> ❤️</h2>
+      <p class="finale-sub">— now, and in every life after this one.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="close">✕</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
